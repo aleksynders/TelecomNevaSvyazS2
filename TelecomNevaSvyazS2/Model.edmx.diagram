@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e4e7feff1c6a46638f61fc7edd6fe7e9" Name="Diagram1">
+        <EntityTypeShape EntityType="CRM5Model.AvailableModules" Width="1.5" PointX="8" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.BuildingTypes" Width="1.5" PointX="1.5" PointY="30.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.Citys" Width="1.5" PointX="1.5" PointY="24.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.ConnectedServices" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.Contracts" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.CRM" Width="1.5" PointX="6" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.Employees" Width="1.5" PointX="8" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.EquipmentInstallations" Width="1.5" PointX="10.25" PointY="17.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.Equipments" Width="1.5" PointX="8" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.Events" Width="1.5" PointX="8" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.Gender" Width="1.5" PointX="1.5" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.KindsAndTypesService" Width="1.5" PointX="6" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.Modules" Width="1.5" PointX="5.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.ProblemTypes" Width="1.5" PointX="3.75" PointY="8.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.Raions" Width="1.5" PointX="1.5" PointY="26.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.ReasonForTerminations" Width="1.5" PointX="1.5" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.ResidentialAddress" Width="1.5" PointX="1.5" PointY="20.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.Roles" Width="1.5" PointX="5.75" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.Services" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.ServiceStatus" Width="1.5" PointX="3.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.ServiceTypes" Width="1.5" PointX="3.75" PointY="13.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.Streets" Width="1.5" PointX="1.5" PointY="32.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.Subscribers" Width="1.5" PointX="3.75" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.sysdiagrams" Width="1.5" PointX="2.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.TypeContracts" Width="1.5" PointX="1.5" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.TypeEquioment" Width="1.5" PointX="5.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CRM5Model.TypeOfServices" Width="1.5" PointX="3.75" PointY="26.25" IsExpanded="true" />
+        <AssociationConnector Association="CRM5Model.FK_AvailableModules_Modules" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_AvailableModules_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_Raions_BuildingTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_ResidentialAddress_Citys" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_ConnectedServices_Contracts" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_ConnectedServices_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_Contracts_ReasonForTerminations" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_Contracts_TypeContracts" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_Subscribers_Contracts" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_CRM_ProblemTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_CRM_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_CRM_ServiceStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_CRM_ServiceTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_CRM_Subscribers" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_CRM_TypeOfServices" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_Employees_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_EquipmentInstallations_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_EquipmentInstallations_Equipments" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_EquipmentInstallations_Subscribers" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_Equipments_TypeEquioment" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_Events_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_Subscribers_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_KindsAndTypesService_ServiceStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_KindsAndTypesService_TypeOfServices" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_ResidentialAddress_Raions" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_ResidentialAddress_Streets" ManuallyRouted="false" />
+        <AssociationConnector Association="CRM5Model.FK_Subscribers_ResidentialAddress" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
