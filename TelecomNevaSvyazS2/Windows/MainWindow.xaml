@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Icon="/Resources/image.ico"
         WindowStartupLocation="CenterScreen"
-        Title="ООО «Телеком Нева Связь»" Height="800" Width="1250" MinHeight="800" MinWidth="1250">
+        Title="ООО «Телеком Нева Связь»" Height="700" Width="1550" MinHeight="700" MinWidth="1250">
     <Grid>
         <Grid Grid.Column="0" MouseEnter="Grid_MouseEnter" MouseLeave="Grid_MouseLeave" Background="White" x:Name="cd" Width="100" HorizontalAlignment="Left" Panel.ZIndex="1000">
             <Grid.ColumnDefinitions>
@@ -25,6 +25,7 @@
             </StackPanel>
             <StackPanel x:Name="spOpen" Grid.Column="0" Visibility="Collapsed">
                 <Image Source="/Resources/Лого ТНС.jpg" Width="150" Margin="10"/>
+                <Label Name="lbAbonent" Content="Абоненты" Background="LightGray" Margin="5" Padding="5" Height="60" Width="160" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Cursor="Hand"/>
                 <Label Name="lbEquipmentManagement" Background="LightGray" Margin="5" Padding="5" Height="60" Width="160" FontSize="20" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Cursor="Hand">
                     <StackPanel>
                         <TextBlock Text="Управление" HorizontalAlignment="Center"/>
