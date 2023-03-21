@@ -38,11 +38,11 @@
             </StackPanel>
             <StackPanel Orientation="Vertical" Grid.Column="3" Margin="10">
                 <TextBlock Text="Номер дома" HorizontalAlignment="Center"/>
-                <ComboBox x:Name="cbFiltNomerHouse" />
+                <ComboBox x:Name="cbFiltNomerHouse" Width="90"/>
             </StackPanel>
             <StackPanel Orientation="Vertical" Grid.Column="4" Margin="10">
                 <TextBlock Text="Лицевой счет" HorizontalAlignment="Center"/>
-                <TextBox x:Name="tbSearchPersonalAccount"/>
+                <TextBox x:Name="tbSearchPersonalAccount" Width="100"/>
             </StackPanel>
         </Grid>
         <DataGrid Name="dgSubscribers" Grid.Row="1" Margin="10" FontSize="18" AutoGenerateColumns="False" CanUserAddRows="False">
@@ -59,8 +59,6 @@
                 <ColumnDefinition/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <CheckBox Margin="10" Name="cbActive" Content="Активные" Grid.Column="0" VerticalAlignment="Center" Click="cbActive_Click"/>
-            <CheckBox Margin="10" Name="cbNotActive" Content="Неактивные" Grid.Column="1" VerticalAlignment="Center"/>
         </Grid>
     </Grid>
 </Page>

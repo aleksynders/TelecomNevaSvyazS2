@@ -28,7 +28,6 @@ namespace TelecomNevaSvyazS2
             InitializeComponent();
             b = true;
             dgSubscribers.ItemsSource = BaseClass.BD.Subscribers.ToList();
-            cbActive.IsChecked = true; // Изначально с активными договорами
             List<Raions> raions = BaseClass.BD.Raions.ToList(); // Заполнение районов
             cbFilterRaion.Items.Add("Все районы");
             foreach (Raions raion in raions)
@@ -38,11 +37,6 @@ namespace TelecomNevaSvyazS2
             cbFilterRaion.SelectedIndex = 0;
             cbFilterStreet.IsEnabled = false;
             cbFiltNomerHouse.IsEnabled = false;
-        }
-
-        private void cbActive_Click(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void tbSearchSurname_SelectionChanged(object sender, RoutedEventArgs e)
