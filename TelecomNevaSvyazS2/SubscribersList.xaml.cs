@@ -19,7 +19,7 @@ namespace TelecomNevaSvyazS2
     /// Логика взаимодействия для SubscribersList.xaml
     /// </summary>
     /// 
-    
+
     public partial class SubscribersList : Page
     {
         bool b;
@@ -41,12 +41,23 @@ namespace TelecomNevaSvyazS2
 
         private void tbSearchSurname_SelectionChanged(object sender, RoutedEventArgs e)
         {
-
+            Filter();
         }
 
         private void cbFilterRaion_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
+        }
+
+        void Filter()
+        {
+            List<Subscribers> subscribers = new List<Subscribers>();
+            subscribers = BaseClass.BD.Subscribers.Where(x => x.Surname.ToLower().Contains(tbSearchSurname.Text)).ToList();
+            dgSubscribers.ItemsSource = subscribers;
+            if (subscribers.Count == 0)
+            {
+                MessageBox.Show("Отсутствуют данные, удовлетворяющие результатам поиска");
+            }
         }
     }
 }
